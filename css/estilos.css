@@ -1,0 +1,345 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+}
+
+#portafolio{
+    width: 100%;    
+    overflow: hidden;
+}
+
+/* PORTADA */
+#portada{    
+    min-height: 90vh;  
+    overflow: hidden;          
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;    
+    background: radial-gradient(#2e2e2e,#474747);
+}
+
+.titulo{   
+    grid-row: 1;
+    grid-column: 2;      
+    font-size: 4rem;
+    color: #5f94bd;
+    text-align: center;
+    letter-spacing: .8rem;
+
+    animation-name: aparecerConocimientos;
+    animation-duration: 2s;
+}
+
+.parrafo{
+    color: #e5b567;
+    margin-top: 1rem;
+    font-size: 2rem;
+    letter-spacing: normal;
+}
+
+#foto-yo{
+    grid-row: 2;
+    grid-column: 2;
+    margin: auto;       
+
+    animation-name: aparecerConocimientos;
+    animation-duration: 2s;
+}
+
+#foto-yo img{
+    border-radius: 50%;
+    width: 25rem;
+    height: 25rem;    
+    margin-bottom: 5rem;
+}
+
+#foto-yo div{
+    text-align: center;
+    font-size: 2rem;
+    color: #b05279;
+    position: relative;
+    bottom: 4rem;
+    right: 1rem;
+}
+
+.blanco{
+    color: #d6d6d6;
+    text-align: center;
+}
+
+#desarrollo-web{
+    grid-row: 1;
+    grid-column: 1;
+    padding-top: 1rem;
+}
+
+#ciencia-datos{
+    grid-row: 1;
+    grid-column: 3;
+    padding-top: 1rem;
+}
+
+#programar{
+    grid-row: 2;
+    grid-column: 1;
+    margin: auto;  
+}
+
+#plus-conocimientos{
+    grid-row: 2;
+    grid-column: 3;
+    margin: auto;
+}
+
+.tamanio-aplicacion{
+    width: 7.5vw;
+    height: 10.5vh;
+    
+    animation-name: aparecerConocimientos;
+    animation-duration: 2s;
+    animation-direction: alternate;
+}
+
+.tamanio-aplicacion:hover{
+    border: 2px solid rgba(46, 46, 46, 0.503);
+
+    animation-name: bordeMagico;
+    animation-duration: 1s;
+    animation-direction: alternate;
+}
+
+/*SOBRE MI*/
+#sobre-mi{     
+    min-height: 90vh;       
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background: #d6d6d6;
+}
+
+/*CONTENEDOR-1-1*/
+.contenedor-1-1{         
+    grid-row: 1 / span 2;
+    background-color: #6c99bb;    
+}
+
+.contenedor-1-1__estilo{
+    color: #d6d6d6;
+    margin: 2rem 0 0 1rem;
+    font-size: 1.4rem; 
+}
+
+.texto{    
+    margin-top: 1rem;
+    font-size: 1.1rem;  
+}
+
+.texto a{    
+    color: #d6d6d6;
+    text-decoration: none;    
+}
+
+.foto-yo-2{
+    margin-top: 2rem;
+    margin-right: 2.4rem;
+    display: flex;
+    justify-content: center;    
+}
+
+.foto-yo-2 img{
+    border: 2px solid #5f94bd;
+
+    animation: bordeMagico;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/*CONTENEDOR-1-2*/
+.contenedor-1-2{
+    color: #835fc3;   
+    padding: 2rem 0 0 1rem;    
+    height: 70%;
+    background-color: #b1cfe7;        
+}
+
+.contenedor-1-2__titulo{
+    font-size: 6rem;    
+}
+
+.parrafo-1-2__parrafo{
+    font-size: 1.5rem;    
+}
+
+/*CONTENEDOR-2-2*/
+.contenedor-2-2{        
+    color:  #678d14;
+    background-color: #d6d6d6;   
+    width: 90%;
+    position: relative;
+    bottom: 16%;
+}
+
+.contenedor-2-2__estilo{
+    padding: 2rem 0 0 1rem;    
+}
+
+.contenedor-2-2__titulo{
+    font-size: 2rem;
+}
+
+.contenedor-2-2__parrafo{ 
+    font-size: 1.2rem;   
+}
+
+.img-san-marcos{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.img-san-marcos img{    
+    height: 20vh;
+    width: auto;
+}
+
+/*PIE DE PAGINA*/
+footer{
+    overflow: hidden;
+    min-height: 26vh; 
+    background: linear-gradient(#e5b567,#ebc891);
+}
+
+.contenedor-footer{  
+    width: auto;  
+    padding-top: 4.6rem;      
+    display: grid;
+    grid-template-rows: 1fr 1fr;        
+}
+
+.titulo-footer{
+    color: #2e2e2e;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.redes-sociales{ 
+    height: 5vh;
+    text-align: center;     
+    font-size: 3rem;    
+}
+
+.redes-sociales a{
+    padding-right: 1rem;
+}
+
+.rojo{
+    color: rgb(255, 0, 0);
+}
+
+.azul{
+    color: rgb(0,0,255);
+}
+
+.negro{
+    color: #474747;
+}
+
+.redes-sociales a ion-icon:hover{
+    animation: mover;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mover {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-75%) translateY(75%);        
+    }
+}
+
+@keyframes bordeMagico {
+    0%{
+       border-top: 2px solid #9e86c8;
+    }
+
+    25%{
+        border-right: 2px solid #e5b567;       
+    }
+
+    50%{
+        border-bottom: 2px solid #b4d273;
+    }
+
+    75%{
+        border-left: 2px solid #e87d3e;
+    }
+}
+
+@keyframes aparecerConocimientos{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    html{
+        font-size: 12px;        
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    html{
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (max-width: 414px) {
+    html{
+        font-size: 5px;
+    }
+    
+    #sobre-mi{
+        min-height: 60vh;
+    }
+
+    .foto-yo-2 img{
+        height: 100%;
+        width: 100%;
+    } 
+
+    .img-san-marcos img{        
+        width: 50%;
+        height: 50%;
+    }
+
+    footer{
+        min-height: 10vh;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    html{
+        font-size: 4px;
+    }
+    .tamanio-aplicacion{
+        width: 80%;
+    }
+}
